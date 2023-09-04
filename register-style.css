@@ -1,0 +1,57 @@
+body{
+    background-color: #EED6D3;
+}
+
+.container{
+    display: flex;
+    /* position: inline-flex; */
+    /* flex-flow: column wrap; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500px;
+    /* width: 400px; */
+}
+
+.container input ,label{
+    padding: 10px;
+}
+
+.container input{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 17px;
+
+}
+
+
+.container input[type="submit"]{
+    width: 50%;
+    border: 0;
+    border-radius: 5px;
+    background-color: #67595E;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+
+
+/* Rosewater
+#E8B4B8
+
+Dusty Rose
+#EED6D3
+
+Coffee Pot
+#A49393
+
+Coffee Pot
+#67595E */

@@ -1,5 +1,6 @@
 body{
-    background-image: url("./login1.jpg");  
+    /* background-image: url("./login1.jpg");   */
+    background-color:#E8B4B8;
     background-size: cover; 
 }
 
@@ -22,6 +23,7 @@ body{
     font-size: 20px;
     font-weight: 500px ;
     /* padding-left: px; */
+    color: black;
 }
 
 
@@ -29,7 +31,7 @@ body{
     font-size: 5em;
     margin-left: 150px;
     padding-bottom: 40px;
-    color: blu;
+    /* color: blu; */
     /* border: ; */
 }
 
@@ -37,12 +39,14 @@ body{
     position: absolute;
     top: 45%;
     padding-left: 20px;
+    color: black;
 }
 
 .icon .fa-lock{
     position: absolute;
     top: 65%;
     padding-left: 20px;
+    color: black;
 }
 
 
@@ -63,18 +67,17 @@ body{
 }
 
 .box input[type="submit"] {
-    width: 90%;
+    width: 30%;
     height: 40px;
     border: 0;
     color: aliceblue;
     font-size: 18px;
-    background-color: red;
+    background-color: #67595E;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     cursor: pointer;
 }
-
 
 
 .box p{
@@ -84,5 +87,17 @@ body{
 }
 
 a{
-    color: black;
+    color:black;
 }
+
+/* Rosewater
+#E8B4B8
+
+Dusty Rose
+#EED6D3
+
+Coffee Pot
+#A49393
+
+Coffee Pot
+#67595E */
