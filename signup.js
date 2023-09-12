@@ -1,26 +1,25 @@
-document.getElementById("signup-form").addEventListener("submit", function (event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    const signupForm = document.getElementById("signup-form");
 
-
-    const firstName = document.getElementById("first-name").value;
-    const lastName = document.getElementById("last-name").value;
-    const email = document.getElementById("email").value;
-    const newPassword = document.getElementById("new-password").value;
-    const confirmPassword = document.getElementById("confirm-password").value;
-
-
-    if (newPassword !== confirmPassword) {
-        alert("Passwords do not match. Please try again.");
-        return;
+    if (signupForm) {
+        signupForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+            
+            registerUser(username, password);
+        });
     }
 
-
-    const userData = {
-        firstName: firstName,
-        lastName: lastName,
-        email: email,
-        password: newPassword
-    };
-
-    alert("Registration successful!\n\n" + JSON.stringify(userData, null, 2));
+    function registerUser(username, password) {
+        
+        
+        setTimeout(function() {
+            alert("Registration successful!");
+            
+        }, 1000);
+        
+        
+    }
 });

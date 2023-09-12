@@ -1,13 +1,24 @@
-document.getElementById("login-form").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    
-    
-    if (username === "admin" && password === "admin123") {
-        alert("Login successful!");
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("login-form");
+
+    if (loginForm) {
+        loginForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            
+           
+            loginUser(username, password);
+        });
+    }
+
+    function loginUser(username, password) {
         
-    } else {
-        alert("Login failed. Please check your credentials.");
+        setTimeout(function() {
+            alert("Login successful!");
+            
+        }, 1000);
+        
+       
     }
 });
